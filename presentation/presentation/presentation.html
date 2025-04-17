@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="ru-RU">
+<head>
+  <meta charset="utf-8">
+  <meta name="generator" content="pandoc">
+  <meta name="author" content="Коровкин Н. М.">
+  <title>Доклад на тему Глобальные сети</title>
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+  <link href="data:text/plain;charset=UTF-8;charset=utf-8,Not%20found%3A%20%2Freveal%2Ejs%404%2E6%2E1%2F%2Fdist%2Freset%2Ecss" rel="stylesheet">
+  <link href="data:text/plain;charset=UTF-8;charset=utf-8,Not%20found%3A%20%2Freveal%2Ejs%404%2E6%2E1%2F%2Fdist%2Freveal%2Ecss" rel="stylesheet">
+  <style>
+.reveal .sourceCode { 
+overflow: visible;
+}
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+
+ul.task-list[class]{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+font-size: inherit;
+width: 0.8em;
+margin: 0 0.8em 0.2em -1.6em;
+vertical-align: middle;
+}
+.display.math{display: block; text-align: center; margin: 0.5rem auto;}
+
+div.csl-bib-body { }
+div.csl-entry {
+clear: both;
+}
+.hanging-indent div.csl-entry {
+margin-left:2em;
+text-indent:-2em;
+}
+div.csl-left-margin {
+min-width:2em;
+float:left;
+}
+div.csl-right-inline {
+margin-left:2em;
+padding-left:1em;
+}
+div.csl-indent {
+margin-left: 2em;
+} </style>
+  <link href="data:text/plain;charset=UTF-8;charset=utf-8,Not%20found%3A%20%2Freveal%2Ejs%404%2E6%2E1%2F%2Fdist%2Ftheme%2Fbeige%2Ecss" rel="stylesheet" id="theme">
+  
+  
+  
+  
+</head>
+<body>
+  <div class="reveal">
+    <div class="slides">
+
+<section id="title-slide">
+  <h1 class="title">Доклад на тему Глобальные сети</h1>
+  <p class="subtitle">Презентация</p>
+  <p class="author">Коровкин Н. М.</p>
+  <p class="institute">Российский университет дружбы народов, Москва,
+Россия</p>
+  <p class="date">17 апреля 2024</p>
+</section>
+
+<section>
+<section id="информация" class="title-slide slide level1">
+<h1>Информация</h1>
+
+</section>
+<section id="докладчик" class="slide level2">
+<h2>Докладчик</h2>
+<div class="columns" data-align="center">
+<div class="column" style="width:70%;">
+<ul>
+<li>Коровкин Никита Михайлович</li>
+<li>Студент</li>
+<li>Российский университет дружбы народов</li>
+<li><a href="mailto:1132246835@pfur.ru">1132246835@pfur.ru</a></li>
+</ul>
+</div><div class="column" style="width:30%;">
+
+</div>
+</div>
+</section>
+<section id="введение" class="slide level2">
+<h2>Введение</h2>
+<p>Глобальные сети (Wide Area Networks, WAN) — это инфраструктуры,
+обеспечивающие связь между устройствами на больших расстояниях, включая
+межконтинентальные масштабы. В отличие от локальных сетей (LAN), WAN
+охватывают географически распределенные узлы, объединяя их через
+разнообразные каналы связи. Такие сети лежат в основе интернета,
+корпоративных систем и государственных коммуникаций. Их архитектура
+базируется на сложных технологиях передачи данных, маршрутизации и
+управлении трафиком.</p>
+</section>
+<section id="основные-компоненты-глобальных-сетей" class="slide level2">
+<h2>Основные компоненты глобальных сетей</h2>
+<h3 id="терминальные-устройства">Терминальные устройства</h3>
+<p>Компьютеры, серверы, IoT-устройства, которые генерируют и потребляют
+данные. (IoT – Internet of things – устройства от камер и микрофонов до
+автомобилей, которые неразрывно связаны с интернетом)</p>
+<h3 id="коммуникационное-оборудование">Коммуникационное
+оборудование:</h3>
+<ol type="1">
+<li><p>Маршрутизаторы. Определяют оптимальные пути для передачи пакетов
+между сетями.</p></li>
+<li><p>Коммутаторы Обеспечивают соединение устройств в пределах одной
+сети.</p></li>
+<li><p>Шлюзы Преобразуют данные между разными протоколами (например, LAN
+и WAN).</p></li>
+</ol>
+</section>
+<section id="каналы-связи" class="slide level2">
+<h2>Каналы связи</h2>
+<ul>
+<li>Проводные (оптоволокно, медные кабели).</li>
+<li>Беспроводные (спутники, радиоканалы, сотовые сети).</li>
+</ul>
+<figure>
+<img data-src="data:image/jpeg;base64,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" alt="Оптоволоконный кабель" />
+<figcaption aria-hidden="true">Оптоволоконный кабель</figcaption>
+</figure>
+</section>
+<section id="принципы-работы" class="slide level2">
+<h2>Принципы работы</h2>
+<p>Глобальные сети функционируют на основе пакетной коммутации. В
+компьютерных сетях пакет — это определённым образом оформленный блок
+данных, передаваемый по сети в пакетном режиме.</p>
+</section>
+<section id="принципы-работы-1" class="slide level2">
+<h2>Принципы работы</h2>
+<p>Сетевой пакет может состоять из служебной информации, включающей
+стартовые биты (преамбулу), заголовки (headers) и прицеп (trailer), и
+полезную нагрузку (payload). Между пакетами, посылаемыми в сеть, обычно
+соблюдается межкадровый интервал. Максимальная длина нагрузки называется
+maximum transmission unit (MTU).</p>
+</section>
+<section id="инкапсуляция-маршрутизация-и-доставка-ключевые-этапы-передачи-данных-в-глобальных-сетях" class="slide level2">
+<h2>Инкапсуляция, Маршрутизация и Доставка – Ключевые этапы передачи
+данных в глобальных сетях</h2>
+<ol type="1">
+<li>Инкапсуляция: Данные упаковываются в пакеты с заголовками,
+содержащими адреса отправителя и получателя.</li>
+<li>Маршрутизация: Маршрутизаторы анализируют заголовки и выбирают путь
+на основе таблиц маршрутизации и протоколов (например, BGP, OSPF).</li>
+<li>Доставка: Пакеты передаются через промежуточные узлы до конечного
+пункта.</li>
+</ol>
+</section>
+<section id="протоколы" class="slide level2">
+<h2>Протоколы</h2>
+<ul>
+<li>TCP/IP: Основной стек протоколов интернета. TCP обеспечивает
+надежную доставку, IP отвечает за адресацию.</li>
+<li>MPLS: Ускоряет передачу за счет присвоения меток пакетам, минуя
+сложные таблицы маршрутизации.</li>
+<li>SD-WAN: Программно-управляемая технология, оптимизирующая
+использование каналов (например, выбор между LTE и оптоволокном).</li>
+</ul>
+</section>
+<section id="архитектурные-модели" class="slide level2">
+<h2>Архитектурные модели</h2>
+<ol type="1">
+<li>Клиент-сервер : Централизованная модель, где серверы предоставляют
+ресурсы (веб-страницы, файлы), а клиенты их запрашивают.</li>
+<li>Одноранговая сеть (P2P) : Устройства равноправно обмениваются
+данными без центрального сервера (например, BitTorrent).</li>
+<li>Облачные архитектуры : Ресурсы размещаются в распределенных
+дата-центрах, обеспечивая масштабируемость и доступность (AWS,
+Azure).</li>
+</ol>
+</section>
+<section id="безопасность-в-wan" class="slide level2">
+<h2>Безопасность в WAN</h2>
+<p>Глобальные сети уязвимы к атакам из-за открытости инфраструктуры.
+Основные меры защиты: - VPN: Шифрует трафик между узлами, создавая
+защищенные туннели. - Межсетевые экраны (Firewalls) : Фильтруют входящий
+и исходящий трафик. - IDS/IPS: Системы обнаружения и предотвращения
+вторжений. - Шифрование данных: TLS/SSL для веб-трафика, IPsec для
+сетевого уровня.</p>
+</section>
+<section id="современные-тенденции" class="slide level2">
+<h2>Современные тенденции</h2>
+<ol type="1">
+<li>Программно-определяемые сети (SDN) : Отделение управляющей логики от
+физического оборудования. Контроллер SDN централизованно управляет
+потоками данных, повышая гибкость.</li>
+<li>Искусственный интеллект : Используется для прогнозирования нагрузок
+и оптимизации маршрутов.</li>
+<li>5G и IoT : Высокоскоростные сети нового поколения поддерживают
+миллионы подключенных устройств.</li>
+<li>Подводные кабели : Обеспечивают 99% международного трафика,
+демонстрируя важность физической инфраструктуры.</li>
+</ol>
+</section>
+<section id="заключение" class="slide level2">
+<h2>Заключение</h2>
+<p>Глобальные сети — это сложные системы, объединяющие технологии
+передачи данных, продвинутые протоколы и инфраструктуру. Их архитектура
+эволюционирует в сторону виртуализации и интеллектуального управления,
+что позволяет справляться с ростом трафика и киберугрозами. Понимание
+принципов работы WAN критически важно для проектирования надежных и
+масштабируемых сетей будущего.</p>
+</section>
+<section id="список-литературы" class="slide level2 unnumbered">
+<h2 class="unnumbered">Список литературы</h2>
+<div id="refs" role="list">
+
+</div>
+<ol type="1">
+<li><p>Трофимов, В. В. Глобальные и локальные сети : учебник для вузов /
+В. В. Трофимов, М. И. Барабанова, В. И. Кияев. — 4-е изд., перераб. и
+доп. — Москва : Издательство Юрайт, 2025. — 151 с. — (Высшее
+образование). — ISBN 978-5-534-20428-5. — Текст : электронный //
+Образовательная платформа Юрайт [сайт]. — URL:
+https://urait.ru/bcode/568695 (дата обращения: 17.04.2025)</p></li>
+<li><p>Э. Таненбаум, Д. Уэзеролл “Компьютерные сети” 5-е изд.
+(2016)</p></li>
+<li><p>Д. Куроуз, Т. Росс “Компьютерные сети. Настольная книга
+системного администратора” (2016)</p></li>
+</ol>
+</section></section>
+    </div>
+  </div>
+
+  <script src="data:text/plain;charset=UTF-8;charset=utf-8,Not%20found%3A%20%2Freveal%2Ejs%404%2E6%2E1%2F%2Fdist%2Freveal%2Ejs"></script>
+
+  <!-- reveal.js plugins -->
+  <script src="data:text/plain;charset=UTF-8;charset=utf-8,Not%20found%3A%20%2Freveal%2Ejs%404%2E6%2E1%2F%2Fplugin%2Fnotes%2Fnotes%2Ejs"></script>
+  <script src="data:text/plain;charset=UTF-8;charset=utf-8,Not%20found%3A%20%2Freveal%2Ejs%404%2E6%2E1%2F%2Fplugin%2Fsearch%2Fsearch%2Ejs"></script>
+  <script src="data:text/plain;charset=UTF-8;charset=utf-8,Not%20found%3A%20%2Freveal%2Ejs%404%2E6%2E1%2F%2Fplugin%2Fzoom%2Fzoom%2Ejs"></script>
+
+  <script>
+
+      // Full list of configuration options available at:
+      // https://revealjs.com/config/
+      Reveal.initialize({
+        // Display controls in the bottom right corner
+        controls: true,
+
+        // Help the user learn the controls by providing hints, for example by
+        // bouncing the down arrow when they first encounter a vertical slide
+        controlsTutorial: true,
+
+        // Determines where controls appear, "edges" or "bottom-right"
+        controlsLayout: 'bottom-right',
+
+        // Visibility rule for backwards navigation arrows; "faded", "hidden"
+        // or "visible"
+        controlsBackArrows: 'faded',
+
+        // Display a presentation progress bar
+        progress: true,
+
+        // Display the page number of the current slide
+        slideNumber: false,
+
+        // 'all', 'print', or 'speaker'
+        showSlideNumber: 'all',
+
+        // Add the current slide number to the URL hash so that reloading the
+        // page/copying the URL will return you to the same slide
+        hash: true,
+
+        // Start with 1 for the hash rather than 0
+        hashOneBasedIndex: false,
+
+        // Flags if we should monitor the hash and change slides accordingly
+        respondToHashChanges: true,
+
+        // Push each slide change to the browser history
+        history: false,
+
+        // Enable keyboard shortcuts for navigation
+        keyboard: true,
+
+        // Enable the slide overview mode
+        overview: true,
+
+        // Disables the default reveal.js slide layout (scaling and centering)
+        // so that you can use custom CSS layout
+        disableLayout: false,
+
+        // Vertical centering of slides
+        center: true,
+
+        // Enables touch navigation on devices with touch input
+        touch: true,
+
+        // Loop the presentation
+        loop: false,
+
+        // Change the presentation direction to be RTL
+        rtl: false,
+
+        // see https://revealjs.com/vertical-slides/#navigation-mode
+        navigationMode: 'default',
+
+        // Randomizes the order of slides each time the presentation loads
+        shuffle: false,
+
+        // Turns fragments on and off globally
+        fragments: true,
+
+        // Flags whether to include the current fragment in the URL,
+        // so that reloading brings you to the same fragment position
+        fragmentInURL: true,
+
+        // Flags if the presentation is running in an embedded mode,
+        // i.e. contained within a limited portion of the screen
+        embedded: false,
+
+        // Flags if we should show a help overlay when the questionmark
+        // key is pressed
+        help: true,
+
+        // Flags if it should be possible to pause the presentation (blackout)
+        pause: true,
+
+        // Flags if speaker notes should be visible to all viewers
+        showNotes: false,
+
+        // Global override for autoplaying embedded media (null/true/false)
+        autoPlayMedia: null,
+
+        // Global override for preloading lazy-loaded iframes (null/true/false)
+        preloadIframes: null,
+
+        // Number of milliseconds between automatically proceeding to the
+        // next slide, disabled when set to 0, this value can be overwritten
+        // by using a data-autoslide attribute on your slides
+        autoSlide: 0,
+
+        // Stop auto-sliding after user input
+        autoSlideStoppable: true,
+
+        // Use this method for navigation when auto-sliding
+        autoSlideMethod: null,
+
+        // Specify the average time in seconds that you think you will spend
+        // presenting each slide. This is used to show a pacing timer in the
+        // speaker view
+        defaultTiming: null,
+
+        // Enable slide navigation via mouse wheel
+        mouseWheel: false,
+
+        // The display mode that will be used to show slides
+        display: 'block',
+
+        // Hide cursor if inactive
+        hideInactiveCursor: true,
+
+        // Time before the cursor is hidden (in ms)
+        hideCursorTime: 5000,
+
+        // Opens links in an iframe preview overlay
+        previewLinks: false,
+
+        // Transition style (none/fade/slide/convex/concave/zoom)
+        transition: 'slide',
+
+        // Transition speed (default/fast/slow)
+        transitionSpeed: 'default',
+
+        // Transition style for full page slide backgrounds
+        // (none/fade/slide/convex/concave/zoom)
+        backgroundTransition: 'fade',
+
+        // Number of slides away from the current that are visible
+        viewDistance: 3,
+
+        // Number of slides away from the current that are visible on mobile
+        // devices. It is advisable to set this to a lower number than
+        // viewDistance in order to save resources.
+        mobileViewDistance: 2,
+
+        // reveal.js plugins
+        plugins: [
+          RevealNotes,
+          RevealSearch,
+          RevealZoom
+        ]
+      });
+    </script>
+    </body>
+</html>
